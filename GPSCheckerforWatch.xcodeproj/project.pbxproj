@@ -587,6 +587,7 @@
 				FD30409F1DB3E1EB00885506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD3040C51DB3F01800885506 /* Build configuration list for PBXNativeTarget "GPSCfW Extension" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +596,7 @@
 				FD3040C71DB3F01800885506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD3040C91DB3F01800885506 /* Build configuration list for PBXNativeTarget "GPSCfW" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +605,7 @@
 				FD3040CB1DB3F01800885506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
