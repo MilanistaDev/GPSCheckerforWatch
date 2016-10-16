@@ -1,14 +1,31 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16B2548a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="GPSCfW" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="left" text="GPSChecker" textAlignment="center" id="9e5-p1-Xgo">
+                            <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <separator alignment="left" id="DCB-AR-t3M"/>
+                        <label alignment="left" text="Latitude" id="F95-4k-rc0"/>
+                        <label width="136" alignment="left" text="-" id="8Q1-0a-0Pw"/>
+                        <label alignment="left" text="Longitude" id="fMF-Ov-hst"/>
+                        <label width="136" alignment="left" text="-" id="c2N-Zj-HWo"/>
+                        <button width="1" alignment="left" title="Preview Map" id="1y6-P3-iC2">
+                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="VP6-iZ-ULJ" kind="push" identifier="displayMapSegue" id="KeS-SX-oqh"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -28,10 +45,21 @@
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="kTS-zJ-8bt">
+            <objects>
+                <controller id="VP6-iZ-ULJ">
+                    <items>
+                        <map width="136" height="151" alignment="left" id="Nol-Eb-dwK"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="451" y="340"/>
+        </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="GPSCfW" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
