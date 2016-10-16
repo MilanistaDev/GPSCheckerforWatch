@@ -74,6 +74,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="GPS Checker" id="e6d-GY-P7i"/>
+                    <connections>
+                        <outlet property="latLabel" destination="SDd-7E-N8k" id="uBX-ZJ-OxR"/>
+                        <outlet property="lonLabel" destination="6mD-82-RV8" id="tw2-HX-mF3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

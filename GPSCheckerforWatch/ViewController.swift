@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK:- Property
+
+    @IBOutlet weak var latLabel: UILabel!
+    @IBOutlet weak var lonLabel: UILabel!
+
+    // MARK:- Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
