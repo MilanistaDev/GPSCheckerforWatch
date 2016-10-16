@@ -12,10 +12,29 @@ import Foundation
 
 class MapInterfaceController: WKInterfaceController {
 
+    // MARK:- Property
+
+    @IBOutlet var mapView: WKInterfaceMap!
+    var locationData: [String : Double] = [:]
+
+    // MARK:- Life Cycle
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+        guard let contextData = context else {
+            popToRootController()
+            return
+        }
+        self.locationData = contextData as! [String : Double]
+        let latValue = locationData["latitude"]
+        let lonValue = locationData["longitude"]
+
+        let mapLocation = CLLocationCoordinate2DMake(latValue!, lonValue!)
+        let coordinateSpan = MKCoordinateSpanMake(0.02, 0.02)
+
+        self.mapView.addAnnotation(mapLocation, with: WKInterfaceMapPinColor.red)
+        self.mapView.setRegion(MKCoordinateRegionMake(mapLocation, coordinateSpan))
     }
 
     override func willActivate() {

@@ -22,6 +22,8 @@
 		FD3040BE1DB3F01800885506 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3040BD1DB3F01800885506 /* ComplicationController.swift */; };
 		FD3040C01DB3F01800885506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3040BF1DB3F01800885506 /* Assets.xcassets */; };
 		FD3040C41DB3F01800885506 /* GPSCfW.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD3040A41DB3F01800885506 /* GPSCfW.app */; };
+		FD3040CE1DB3F79D00885506 /* MapInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3040CD1DB3F79D00885506 /* MapInterfaceController.swift */; };
+		FD3040CF1DB3FC9700885506 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3040A01DB3ED8700885506 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,7 @@
 		FD3040BD1DB3F01800885506 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		FD3040BF1DB3F01800885506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3040C11DB3F01800885506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3040CD1DB3F79D00885506 /* MapInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				FD3040B71DB3F01800885506 /* InterfaceController.swift */,
+				FD3040CD1DB3F79D00885506 /* MapInterfaceController.swift */,
 				FD3040B91DB3F01800885506 /* ExtensionDelegate.swift */,
 				FD3040BB1DB3F01800885506 /* NotificationController.swift */,
 				FD3040BD1DB3F01800885506 /* ComplicationController.swift */,
@@ -322,6 +326,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD3040BC1DB3F01800885506 /* NotificationController.swift in Sources */,
+				FD3040CE1DB3F79D00885506 /* MapInterfaceController.swift in Sources */,
+				FD3040CF1DB3FC9700885506 /* LocationManager.swift in Sources */,
 				FD3040BE1DB3F01800885506 /* ComplicationController.swift in Sources */,
 				FD3040BA1DB3F01800885506 /* ExtensionDelegate.swift in Sources */,
 				FD3040B81DB3F01800885506 /* InterfaceController.swift in Sources */,

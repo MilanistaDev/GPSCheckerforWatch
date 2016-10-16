@@ -49,13 +49,16 @@
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Map Interface Controller-->
         <scene sceneID="kTS-zJ-8bt">
             <objects>
-                <controller id="VP6-iZ-ULJ">
+                <controller id="VP6-iZ-ULJ" customClass="MapInterfaceController" customModule="GPSCfW_Extension">
                     <items>
                         <map width="136" height="151" alignment="left" id="Nol-Eb-dwK"/>
                     </items>
+                    <connections>
+                        <outlet property="mapView" destination="Nol-Eb-dwK" id="X8I-AA-PzO"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="451" y="340"/>

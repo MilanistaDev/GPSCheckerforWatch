@@ -8,7 +8,7 @@
 
 import WatchKit
 import Foundation
-
+import CoreLocation
 
 class InterfaceController: WKInterfaceController {
 
@@ -16,6 +16,8 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet var latLabel: WKInterfaceLabel!
     @IBOutlet var lonLabel: WKInterfaceLabel!
+    var latValue:Double = 100.0 // Impossible value(-90 to 90)
+    var lonValue:Double = 200.0 // Impossible value(-180 to 180)
 
     // MARK:- Life Cycle
 
@@ -26,8 +28,17 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+
+        // Access Location Service
+        LocationManager.Singleton.sharedInstance.startUpdatingLocation()
+
+        // Set NSNotification
+        let center = NotificationCenter.default
+        center.addObserver(self,
+                           selector:#selector(displayData(notification:)),
+                           name:NSNotification.Name(rawValue: LMLocationUpdateNotification),
+                           object:nil)
     }
     
     override func didDeactivate() {
@@ -35,4 +46,45 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    deinit {
+        let center = NotificationCenter.default
+        center.removeObserver(self)
+    }
+
+    // MARK:- Private Method
+
+    /**
+     取得した位置情報から緯度経度をAppleWatchのLabelに表示
+     Acquired latitude and longitude values are displayed on the Apple Watch's labels.
+     - parameter notification:通知
+     */
+    func displayData(notification:Notification) {
+        let infoDic: Dictionary = notification.userInfo as Dictionary!
+        let location: CLLocation? = infoDic[LMLocationInfoKey] as? CLLocation
+        let coordinate = location!.coordinate
+
+        self.latValue = coordinate.latitude
+        self.lonValue = coordinate.longitude
+
+        self.latLabel.setText((coordinate.latitude).description)
+        self.lonLabel.setText((coordinate.longitude).description)
+    }
+
+    /**
+     緯度と経度を遷移先のマップ画面に渡す
+     Pass the latitude and longitude values to the next map screen(VC).
+     - parameter segueIdentifier: SegueのIdentifier名
+     - returns Any
+     */
+    override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
+
+        guard self.latValue != 100.0 && self.lonValue != 200.0 else {
+            return nil
+        }
+        guard segueIdentifier == "displayMapSegue" else {
+            return nil
+        }
+        let locationData: [String : Double] = ["latitude": self.latValue, "longitude" : self.lonValue]
+        return locationData
+    }
 }
