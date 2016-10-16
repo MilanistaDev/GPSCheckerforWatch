@@ -13,7 +13,58 @@
 		FD3040961DB3E1EB00885506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3040951DB3E1EB00885506 /* Assets.xcassets */; };
 		FD3040991DB3E1EB00885506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3040971DB3E1EB00885506 /* LaunchScreen.storyboard */; };
 		FD3040A11DB3ED8700885506 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3040A01DB3ED8700885506 /* LocationManager.swift */; };
+		FD3040A81DB3F01800885506 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3040A61DB3F01800885506 /* Interface.storyboard */; };
+		FD3040AA1DB3F01800885506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3040A91DB3F01800885506 /* Assets.xcassets */; };
+		FD3040B11DB3F01800885506 /* GPSCfW Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD3040B01DB3F01800885506 /* GPSCfW Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD3040B81DB3F01800885506 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3040B71DB3F01800885506 /* InterfaceController.swift */; };
+		FD3040BA1DB3F01800885506 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3040B91DB3F01800885506 /* ExtensionDelegate.swift */; };
+		FD3040BC1DB3F01800885506 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3040BB1DB3F01800885506 /* NotificationController.swift */; };
+		FD3040BE1DB3F01800885506 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3040BD1DB3F01800885506 /* ComplicationController.swift */; };
+		FD3040C01DB3F01800885506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3040BF1DB3F01800885506 /* Assets.xcassets */; };
+		FD3040C41DB3F01800885506 /* GPSCfW.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD3040A41DB3F01800885506 /* GPSCfW.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD3040B21DB3F01800885506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD3040831DB3E1EB00885506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3040AF1DB3F01800885506;
+			remoteInfo = "GPSCfW Extension";
+		};
+		FD3040C21DB3F01800885506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD3040831DB3E1EB00885506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3040A31DB3F01800885506;
+			remoteInfo = GPSCfW;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD3040C81DB3F01800885506 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD3040B11DB3F01800885506 /* GPSCfW Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3040CC1DB3F01800885506 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FD3040C41DB3F01800885506 /* GPSCfW.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FD30408B1DB3E1EB00885506 /* GPSCheckerforWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSCheckerforWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +75,29 @@
 		FD3040981DB3E1EB00885506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD30409A1DB3E1EB00885506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD3040A01DB3ED8700885506 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FD3040A41DB3F01800885506 /* GPSCfW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSCfW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3040A71DB3F01800885506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FD3040A91DB3F01800885506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD3040AB1DB3F01800885506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3040B01DB3F01800885506 /* GPSCfW Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GPSCfW Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3040B61DB3F01800885506 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FD3040B71DB3F01800885506 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FD3040B91DB3F01800885506 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FD3040BB1DB3F01800885506 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FD3040BD1DB3F01800885506 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FD3040BF1DB3F01800885506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD3040C11DB3F01800885506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FD3040881DB3E1EB00885506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3040AD1DB3F01800885506 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				FD30408D1DB3E1EB00885506 /* GPSCheckerforWatch */,
+				FD3040A51DB3F01800885506 /* GPSCfW */,
+				FD3040B41DB3F01800885506 /* GPSCfW Extension */,
 				FD30408C1DB3E1EB00885506 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				FD30408B1DB3E1EB00885506 /* GPSCheckerforWatch.app */,
+				FD3040A41DB3F01800885506 /* GPSCfW.app */,
+				FD3040B01DB3F01800885506 /* GPSCfW Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +141,38 @@
 			path = GPSCheckerforWatch;
 			sourceTree = "<group>";
 		};
+		FD3040A51DB3F01800885506 /* GPSCfW */ = {
+			isa = PBXGroup;
+			children = (
+				FD3040A61DB3F01800885506 /* Interface.storyboard */,
+				FD3040A91DB3F01800885506 /* Assets.xcassets */,
+				FD3040AB1DB3F01800885506 /* Info.plist */,
+			);
+			path = GPSCfW;
+			sourceTree = "<group>";
+		};
+		FD3040B41DB3F01800885506 /* GPSCfW Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FD3040B71DB3F01800885506 /* InterfaceController.swift */,
+				FD3040B91DB3F01800885506 /* ExtensionDelegate.swift */,
+				FD3040BB1DB3F01800885506 /* NotificationController.swift */,
+				FD3040BD1DB3F01800885506 /* ComplicationController.swift */,
+				FD3040BF1DB3F01800885506 /* Assets.xcassets */,
+				FD3040C11DB3F01800885506 /* Info.plist */,
+				FD3040B51DB3F01800885506 /* Supporting Files */,
+			);
+			path = "GPSCfW Extension";
+			sourceTree = "<group>";
+		};
+		FD3040B51DB3F01800885506 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD3040B61DB3F01800885506 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +183,51 @@
 				FD3040871DB3E1EB00885506 /* Sources */,
 				FD3040881DB3E1EB00885506 /* Frameworks */,
 				FD3040891DB3E1EB00885506 /* Resources */,
+				FD3040CC1DB3F01800885506 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FD3040C31DB3F01800885506 /* PBXTargetDependency */,
 			);
 			name = GPSCheckerforWatch;
 			productName = GPSCheckerforWatch;
 			productReference = FD30408B1DB3E1EB00885506 /* GPSCheckerforWatch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FD3040A31DB3F01800885506 /* GPSCfW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3040C91DB3F01800885506 /* Build configuration list for PBXNativeTarget "GPSCfW" */;
+			buildPhases = (
+				FD3040A21DB3F01800885506 /* Resources */,
+				FD3040C81DB3F01800885506 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD3040B31DB3F01800885506 /* PBXTargetDependency */,
+			);
+			name = GPSCfW;
+			productName = GPSCfW;
+			productReference = FD3040A41DB3F01800885506 /* GPSCfW.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FD3040AF1DB3F01800885506 /* GPSCfW Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3040C51DB3F01800885506 /* Build configuration list for PBXNativeTarget "GPSCfW Extension" */;
+			buildPhases = (
+				FD3040AC1DB3F01800885506 /* Sources */,
+				FD3040AD1DB3F01800885506 /* Frameworks */,
+				FD3040AE1DB3F01800885506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPSCfW Extension";
+			productName = "GPSCfW Extension";
+			productReference = FD3040B01DB3F01800885506 /* GPSCfW Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +240,16 @@
 				ORGANIZATIONNAME = "麻生 拓弥";
 				TargetAttributes = {
 					FD30408A1DB3E1EB00885506 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7M7ZGYSAKB;
+						ProvisioningStyle = Automatic;
+					};
+					FD3040A31DB3F01800885506 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7M7ZGYSAKB;
+						ProvisioningStyle = Automatic;
+					};
+					FD3040AF1DB3F01800885506 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 7M7ZGYSAKB;
 						ProvisioningStyle = Automatic;
@@ -118,6 +270,8 @@
 			projectRoot = "";
 			targets = (
 				FD30408A1DB3E1EB00885506 /* GPSCheckerforWatch */,
+				FD3040A31DB3F01800885506 /* GPSCfW */,
+				FD3040AF1DB3F01800885506 /* GPSCfW Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +284,23 @@
 				FD3040991DB3E1EB00885506 /* LaunchScreen.storyboard in Resources */,
 				FD3040961DB3E1EB00885506 /* Assets.xcassets in Resources */,
 				FD3040941DB3E1EB00885506 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3040A21DB3F01800885506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3040AA1DB3F01800885506 /* Assets.xcassets in Resources */,
+				FD3040A81DB3F01800885506 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3040AE1DB3F01800885506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3040C01DB3F01800885506 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +317,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD3040AC1DB3F01800885506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3040BC1DB3F01800885506 /* NotificationController.swift in Sources */,
+				FD3040BE1DB3F01800885506 /* ComplicationController.swift in Sources */,
+				FD3040BA1DB3F01800885506 /* ExtensionDelegate.swift in Sources */,
+				FD3040B81DB3F01800885506 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD3040B31DB3F01800885506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3040AF1DB3F01800885506 /* GPSCfW Extension */;
+			targetProxy = FD3040B21DB3F01800885506 /* PBXContainerItemProxy */;
+		};
+		FD3040C31DB3F01800885506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3040A31DB3F01800885506 /* GPSCfW */;
+			targetProxy = FD3040C21DB3F01800885506 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FD3040921DB3E1EB00885506 /* Main.storyboard */ = {
@@ -163,6 +358,14 @@
 				FD3040981DB3E1EB00885506 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FD3040A61DB3F01800885506 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3040A71DB3F01800885506 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -289,6 +492,76 @@
 			};
 			name = Release;
 		};
+		FD3040C61DB3F01800885506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 7M7ZGYSAKB;
+				INFOPLIST_FILE = "GPSCfW Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASTK.GPSCheckerforWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		FD3040C71DB3F01800885506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 7M7ZGYSAKB;
+				INFOPLIST_FILE = "GPSCfW Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASTK.GPSCheckerforWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		FD3040CA1DB3F01800885506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7M7ZGYSAKB;
+				IBSC_MODULE = GPSCfW_Extension;
+				INFOPLIST_FILE = GPSCfW/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASTK.GPSCheckerforWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		FD3040CB1DB3F01800885506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7M7ZGYSAKB;
+				IBSC_MODULE = GPSCfW_Extension;
+				INFOPLIST_FILE = GPSCfW/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASTK.GPSCheckerforWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -306,6 +579,22 @@
 			buildConfigurations = (
 				FD30409E1DB3E1EB00885506 /* Debug */,
 				FD30409F1DB3E1EB00885506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD3040C51DB3F01800885506 /* Build configuration list for PBXNativeTarget "GPSCfW Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3040C61DB3F01800885506 /* Debug */,
+				FD3040C71DB3F01800885506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD3040C91DB3F01800885506 /* Build configuration list for PBXNativeTarget "GPSCfW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3040CA1DB3F01800885506 /* Debug */,
+				FD3040CB1DB3F01800885506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

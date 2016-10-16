@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GPSCfW (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>GPSCfW (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>GPSCfW.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>GPSCheckerforWatch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +28,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>FD30408A1DB3E1EB00885506</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD3040A31DB3F01800885506</key>
 		<dict>
 			<key>primary</key>
 			<true/>
