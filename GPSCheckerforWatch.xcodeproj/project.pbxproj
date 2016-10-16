@@ -12,6 +12,7 @@
 		FD3040941DB3E1EB00885506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3040921DB3E1EB00885506 /* Main.storyboard */; };
 		FD3040961DB3E1EB00885506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3040951DB3E1EB00885506 /* Assets.xcassets */; };
 		FD3040991DB3E1EB00885506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3040971DB3E1EB00885506 /* LaunchScreen.storyboard */; };
+		FD3040A11DB3ED8700885506 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3040A01DB3ED8700885506 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FD3040951DB3E1EB00885506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3040981DB3E1EB00885506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD30409A1DB3E1EB00885506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3040A01DB3ED8700885506 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				FD30408E1DB3E1EB00885506 /* AppDelegate.swift */,
 				FD3040901DB3E1EB00885506 /* ViewController.swift */,
+				FD3040A01DB3ED8700885506 /* LocationManager.swift */,
 				FD3040921DB3E1EB00885506 /* Main.storyboard */,
 				FD3040951DB3E1EB00885506 /* Assets.xcassets */,
 				FD3040971DB3E1EB00885506 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				FD3040911DB3E1EB00885506 /* ViewController.swift in Sources */,
 				FD30408F1DB3E1EB00885506 /* AppDelegate.swift in Sources */,
+				FD3040A11DB3ED8700885506 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
