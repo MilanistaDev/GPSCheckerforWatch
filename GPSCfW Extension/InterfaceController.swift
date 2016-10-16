@@ -12,6 +12,13 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    // MARK:- Property
+
+    @IBOutlet var latLabel: WKInterfaceLabel!
+    @IBOutlet var lonLabel: WKInterfaceLabel!
+
+    // MARK:- Life Cycle
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         

@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="GPSCfW" customModuleProvider="target">
                     <items>
-                        <label width="136" alignment="left" text="GPSChecker" textAlignment="center" id="9e5-p1-Xgo">
+                        <label width="136" alignment="left" text="GPS Checker" textAlignment="center" id="9e5-p1-Xgo">
                             <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                         <separator alignment="left" id="DCB-AR-t3M"/>
@@ -25,6 +25,10 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="latLabel" destination="8Q1-0a-0Pw" id="y1U-hi-LTj"/>
+                        <outlet property="lonLabel" destination="c2N-Zj-HWo" id="084-2b-4qA"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
