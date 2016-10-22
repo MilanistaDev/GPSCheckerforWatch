@@ -10,6 +10,11 @@ For Apple Watch and iOS Devices.
 
 <a href="https://2.bp.blogspot.com/-tWSjXXYyRgs/WAutjeELv5I/AAAAAAAAD2k/dZBHgQbBq4kbFaxvMHWe9_2J2ZDOI0uqQCLcB/s1600/GPSCfW_Watch.PNG" imageanchor="1" target="_blank"><img border="0" src="https://2.bp.blogspot.com/-tWSjXXYyRgs/WAutjeELv5I/AAAAAAAAD2k/dZBHgQbBq4kbFaxvMHWe9_2J2ZDOI0uqQCLcB/s1600/GPSCfW_Watch.PNG" width="200"/></a>
 
+## Language
+* Swift 3.0
+* watchOS 3.0
+* iOS 9 and later
+
 ## Installation
 Please download zip file or use git clone.  
 
