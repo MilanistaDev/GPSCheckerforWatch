@@ -1,5 +1,5 @@
 # GPSChecer for Watch
-This App is the sample App.
+This App is the sample App.  
 It is so simple. So not include error alert.  
 You can check only the location data.  
 For Apple Watch and iOS Devices.
@@ -21,6 +21,7 @@ $ git clone git@github.com:MilanistaDev/GPSCheckerforWatch.git
 
 ## Contributing
 If you find bugs, please send pull-request.
+
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
@@ -35,6 +36,7 @@ If you find bugs, please send pull-request.
 ## Credits
 Takuya Aso, 2016  
 milanista224☆me.com　☆ -> @
+
 ## License
 No license
 > If you think this sample code is useful, please use freely.
