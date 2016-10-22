@@ -6,9 +6,9 @@ For Apple Watch and iOS Devices.
 
 ## Screen shot
 
-![iOS](https://2.bp.blogspot.com/-J3IjbY5KSWo/WAutjX1jdZI/AAAAAAAAD2o/1BgJxRLcUaM9wXJTdPkDMCm-H0f4lMQkACLcB/s1600/GPSCfW_iOS.png)
+<a href="https://2.bp.blogspot.com/-J3IjbY5KSWo/WAutjX1jdZI/AAAAAAAAD2o/1BgJxRLcUaM9wXJTdPkDMCm-H0f4lMQkACLcB/s1600/GPSCfW_iOS.png" imageanchor="1" target="_blank"><img border="0" src="https://2.bp.blogspot.com/-J3IjbY5KSWo/WAutjX1jdZI/AAAAAAAAD2o/1BgJxRLcUaM9wXJTdPkDMCm-H0f4lMQkACLcB/s1600/GPSCfW_iOS.png" width="200"/></a>
 
-![Apple Watch](https://2.bp.blogspot.com/-tWSjXXYyRgs/WAutjeELv5I/AAAAAAAAD2k/dZBHgQbBq4kbFaxvMHWe9_2J2ZDOI0uqQCLcB/s1600/GPSCfW_Watch.PNG)
+<a href="https://2.bp.blogspot.com/-tWSjXXYyRgs/WAutjeELv5I/AAAAAAAAD2k/dZBHgQbBq4kbFaxvMHWe9_2J2ZDOI0uqQCLcB/s1600/GPSCfW_Watch.PNG" imageanchor="1" target="_blank"><img border="0" src="https://2.bp.blogspot.com/-tWSjXXYyRgs/WAutjeELv5I/AAAAAAAAD2k/dZBHgQbBq4kbFaxvMHWe9_2J2ZDOI0uqQCLcB/s1600/GPSCfW_Watch.PNG" width="200"/></a>
 
 ## Installation
 Please download zip file or use git clone.  
